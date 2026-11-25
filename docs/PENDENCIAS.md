@@ -2,8 +2,8 @@
 
 ## Publicação
 - [x] Landing page na raiz (feito em 25/11/2026, ver CHANGELOG).
-- [ ] Ativar o GitHub Pages e configurar o domínio personalizado.
-- [ ] Criar os registros DNS no Registro.br (ver `DOMINIO-E-DNS.md`).
+- [x] GitHub Pages ativo com o domínio personalizado salvo (25/11/2026).
+- [ ] Criar os registros DNS no Registro.br (ver `DOMINIO-E-DNS.md`). Modo Avançado já ativado; aguardando o fim da "transição" do domínio para o editor de zona aceitar registros.
 - [ ] Ativar *Enforce HTTPS*.
 
 ## Bio (`/bio`)
