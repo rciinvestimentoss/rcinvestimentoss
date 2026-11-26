@@ -2,6 +2,18 @@
 
 Mais recente primeiro. Cada entrada corresponde a um commit (hash entre parênteses; `git log` é a fonte definitiva).
 
+## 26/11/2026 (00h) – Site no ar com HTTPS: testes aprovados
+- **DNS:** a transição do Registro.br terminou. `rcinvestimentoss.com.br` resolve para os 4 IPs do GitHub Pages (conferido em dns.google).
+- **GitHub Pages:** "DNS check successful"; **Enforce HTTPS marcado** (confirmado após recarregar a página). Nenhuma outra configuração alterada; `CNAME` do repositório intacto (`rcinvestimentoss.com.br`).
+- **Testes (navegador na nuvem e no app):**
+  - `https://rcinvestimentoss.com.br/` abre a landing ("Consórcio imobiliário em Goiânia | Rafael Correa, Autorizado Ademicon") com certificado válido.
+  - `https://rcinvestimentoss.com.br/bio/` abre a bio ("Rafael Corrêa | Consultor autorizado Ademicon · Goiânia").
+  - `http://` e `www.` redirecionam para `https://rcinvestimentoss.com.br`.
+  - Arquivos: `css/styles.css`, `js/main.js`, `assets/rafael.jpg`, `bio/css/styles.css`, `bio/js/main.js`, `bio/assets/rafael.jpg`, `bio/assets/rafael-correa.vcf` respondem 200.
+  - Links da bio conferidos: WhatsApp (`wa.me/5562991412416`), Instagram (@turcovet), LinkedIn, e-mail, telefone, Ademicon Goiânia.
+  - Único 404 observado: `/favicon.ico` automático do navegador (as páginas usam `assets/rafael.jpg` como ícone). Sem impacto.
+- Ciclo de testes de 20 em 20 minutos encerrado.
+
 ## 25/11/2026 (22h) – Diagnóstico: DNS ainda em transição (sem alteração no site)
 - Testes automáticos (rodadas 21:37 e 21:59): GitHub Pages segue em "DNS Check in Progress"; *Enforce HTTPS* indisponível; `rcinvestimentoss.com.br` não abre no navegador.
 - Consulta ao DNS público (dns.google): o domínio ainda está delegado aos servidores `a.auto.dns.br` / `b.auto.dns.br` (modo básico do Registro.br), que **não têm** os registros novos (resposta A vazia; `www` inexistente).

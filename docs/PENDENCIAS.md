@@ -4,8 +4,8 @@
 - [x] Landing page na raiz (feito em 25/11/2026, ver CHANGELOG).
 - [x] GitHub Pages ativo com o domínio personalizado salvo (25/11/2026).
 - [x] Registros DNS criados no Registro.br (25/11/2026): 4 A + CNAME www.
-- [ ] Aguardar a propagação e clicar em "Verifique novamente" no GitHub Pages.
-- [ ] Ativar *Enforce HTTPS*.
+- [x] DNS propagado e verificado no GitHub Pages (26/11/2026).
+- [x] *Enforce HTTPS* ativado (26/11/2026).
 
 ## Bio (`/bio`)
 - [ ] Baixar as 6 fotos das seções que ainda carregam de `meuairgo.com.br` para `bio/assets/` e trocar os endereços no `bio/index.html`. Se o plano do Airgo acabar, elas somem.
