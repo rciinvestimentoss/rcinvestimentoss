@@ -2,6 +2,12 @@
 
 Mais recente primeiro. Cada entrada corresponde a um commit (hash entre parênteses; `git log` é a fonte definitiva).
 
+## 25/11/2026 (22h) – Diagnóstico: DNS ainda em transição (sem alteração no site)
+- Testes automáticos (rodadas 21:37 e 21:59): GitHub Pages segue em "DNS Check in Progress"; *Enforce HTTPS* indisponível; `rcinvestimentoss.com.br` não abre no navegador.
+- Consulta ao DNS público (dns.google): o domínio ainda está delegado aos servidores `a.auto.dns.br` / `b.auto.dns.br` (modo básico do Registro.br), que **não têm** os registros novos (resposta A vazia; `www` inexistente).
+- Causa: os registros foram salvos na zona do Modo Avançado, que só passa a valer quando a transição de servidores termina (aviso do Registro.br: ~2h a partir de 20:55; previsão ≈ 23:00 no horário de Brasília).
+- Ação: nenhuma correção necessária; manter o ciclo de testes de 20 em 20 minutos. Se após a transição o GitHub continuar em "in progress", remover e salvar de novo o domínio em Settings → Pages.
+
 ## 25/11/2026 (noite) – Registros DNS criados no Registro.br
 - Com o domínio fora da "transição", o editor de zona (Modo Avançado) aceitou registros. Criados e salvos em `rcinvestimentoss.com.br`:
   - 4 × **A** na raiz: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`.
