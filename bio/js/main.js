@@ -1,7 +1,6 @@
 /* ================= CONFIGURAÇÕES (edite aqui) ================= */
 const CONFIG = {
   whatsapp: '5562991412416',
-  pixKey: '+5562991412416',   // chave PIX (tipo telefone). Confirme se é este número.
   landingUrl: 'https://rcinvestimentoss.com.br/?utm_source=instagram&utm_medium=bio&utm_campaign=link_na_bio'  // landing de simulação. Se vazio, o card abre o WhatsApp.
 };
 /* ============================================================== */
@@ -34,7 +33,6 @@ async function copy(text, msg){
   catch(e){ const t=document.createElement('textarea'); t.value=text; document.body.appendChild(t); t.select(); try{document.execCommand('copy')}catch(_){} t.remove(); }
   say(msg);
 }
-$('#copyPix').addEventListener('click', () => copy(CONFIG.pixKey, 'Chave PIX copiada'));
 
 /* Carrossel */
 const track_ = $('#track'), dots = $$('#dots i');

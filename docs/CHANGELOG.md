@@ -2,6 +2,13 @@
 
 Mais recente primeiro. Cada entrada corresponde a um commit (hash entre parênteses; `git log` é a fonte definitiva).
 
+## 26/11/2026 – Bio: cards de PIX removidos
+- `bio/index.html`: removidos os dois cards da seção de links: "Chave PIX" (botão que copiava a chave) e "PIX QR Code" (link para `meuairgo.com.br/pixPayment/...`, do Airgo).
+- `bio/js/main.js`: removidos `CONFIG.pixKey` e o código do botão `#copyPix` (sem isso o script daria erro ao procurar um elemento que não existe). A função `copy()` e o aviso (`say`) continuam no arquivo por serem genéricos; a função `copy()` ficou sem uso por enquanto.
+- Motivo: pedido do cliente; o link PIX dependia do Airgo e a bio sai da dependência dessa plataforma.
+- Seção de links da bio agora: Ademicon Goiânia e Telefone.
+- Ainda dependem do Airgo: as 6 imagens das seções "Sobre mim", "Planejamento Financeiro" e "Benedita Gastrobar" (ver `PENDENCIAS.md`).
+
 ## 26/11/2026 – Bio: card "Simular agora" ligado à landing
 - `bio/js/main.js`: `CONFIG.landingUrl` passou de vazio para `https://rcinvestimentoss.com.br/?utm_source=instagram&utm_medium=bio&utm_campaign=link_na_bio`.
 - Efeito: o card de destaque da bio ("Faça sua simulação gratuita") agora abre a landing em vez do WhatsApp, com UTM para medir no Pixel/Analytics os leads vindos do Instagram. Se `landingUrl` for esvaziado, o card volta a abrir o WhatsApp.

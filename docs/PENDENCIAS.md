@@ -10,7 +10,7 @@
 ## Bio (`/bio`)
 - [ ] Baixar as 6 fotos das seções que ainda carregam de `meuairgo.com.br` para `bio/assets/` e trocar os endereços no `bio/index.html`. Se o plano do Airgo acabar, elas somem.
 - [x] `landingUrl` preenchido com a landing + UTM (26/11/2026).
-- [ ] Confirmar a chave PIX (`pixKey`, hoje um telefone).
+- [x] Cards de PIX removidos da bio (26/11/2026); não há mais chave PIX a confirmar.
 
 ## Landing
 - [ ] Preencher CNPJ, webhook do CRM e depoimentos reais (bloco `CONFIG`).
