@@ -2,7 +2,7 @@
 const CONFIG = {
   whatsapp: '5562991412416',
   pixKey: '+5562991412416',   // chave PIX (tipo telefone). Confirme se é este número.
-  landingUrl: ''              // link da landing page de simulação (ex.: 'https://simular.seudominio.com.br'). Se vazio, o card abre o WhatsApp.
+  landingUrl: 'https://rcinvestimentoss.com.br/?utm_source=instagram&utm_medium=bio&utm_campaign=link_na_bio'  // landing de simulação. Se vazio, o card abre o WhatsApp.
 };
 /* ============================================================== */
 

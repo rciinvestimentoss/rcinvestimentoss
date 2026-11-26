@@ -2,6 +2,11 @@
 
 Mais recente primeiro. Cada entrada corresponde a um commit (hash entre parênteses; `git log` é a fonte definitiva).
 
+## 26/11/2026 – Bio: card "Simular agora" ligado à landing
+- `bio/js/main.js`: `CONFIG.landingUrl` passou de vazio para `https://rcinvestimentoss.com.br/?utm_source=instagram&utm_medium=bio&utm_campaign=link_na_bio`.
+- Efeito: o card de destaque da bio ("Faça sua simulação gratuita") agora abre a landing em vez do WhatsApp, com UTM para medir no Pixel/Analytics os leads vindos do Instagram. Se `landingUrl` for esvaziado, o card volta a abrir o WhatsApp.
+- A landing lê `utm_*` da URL e as envia junto com o lead (comportamento já existente no `js/main.js` da landing).
+
 ## 26/11/2026 (00h) – Site no ar com HTTPS: testes aprovados
 - **DNS:** a transição do Registro.br terminou. `rcinvestimentoss.com.br` resolve para os 4 IPs do GitHub Pages (conferido em dns.google).
 - **GitHub Pages:** "DNS check successful"; **Enforce HTTPS marcado** (confirmado após recarregar a página). Nenhuma outra configuração alterada; `CNAME` do repositório intacto (`rcinvestimentoss.com.br`).

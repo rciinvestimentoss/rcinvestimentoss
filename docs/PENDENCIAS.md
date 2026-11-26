@@ -9,7 +9,7 @@
 
 ## Bio (`/bio`)
 - [ ] Baixar as 6 fotos das seções que ainda carregam de `meuairgo.com.br` para `bio/assets/` e trocar os endereços no `bio/index.html`. Se o plano do Airgo acabar, elas somem.
-- [ ] Preencher `landingUrl` em `bio/js/main.js` com `https://rcinvestimentoss.com.br/?utm_source=instagram&utm_medium=bio` quando a landing estiver no ar. Vazio, o card abre o WhatsApp.
+- [x] `landingUrl` preenchido com a landing + UTM (26/11/2026).
 - [ ] Confirmar a chave PIX (`pixKey`, hoje um telefone).
 
 ## Landing
