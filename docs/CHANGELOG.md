@@ -2,6 +2,14 @@
 
 Mais recente primeiro. Cada entrada corresponde a um commit (hash entre parênteses; `git log` é a fonte definitiva).
 
+## 25/11/2026 (noite) – Registros DNS criados no Registro.br
+- Com o domínio fora da "transição", o editor de zona (Modo Avançado) aceitou registros. Criados e salvos em `rcinvestimentoss.com.br`:
+  - 4 × **A** na raiz: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`.
+  - 1 × **CNAME** `www` → `rciinvestimentoss.github.io`.
+- Conferido recarregando o painel: os 5 registros permaneceram gravados.
+- Próximos passos: aguardar a propagação do DNS, clicar em "Verifique novamente" em GitHub Settings → Pages e ativar *Enforce HTTPS*.
+- Observação: o Modo Avançado só pode voltar ao básico após ~2 horas do momento em que foi ativado (ver entrada anterior). Não é necessário voltar.
+
 ## 25/11/2026 – Configurações externas (GitHub Pages e Registro.br)
 Alterações feitas fora do código, pelo navegador, a pedido do cliente:
 - **GitHub Pages:** verificado em Settings → Pages. Já estava ativo (*Deploy from a branch*, `main` / `(root)`) com o domínio `rcinvestimentoss.com.br` salvo. O GitHub mostrava "DNS check in progress" e *Enforce HTTPS* indisponível, por falta dos registros DNS. Nada foi alterado nessa tela.
